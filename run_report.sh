@@ -6,8 +6,10 @@ MODE="${2:-extract_and_save}"
 
 LOAD_PATH="${3:-}"
 
+# handy for testing
+MAX_PAGES="${4:-}"
 
-export TOPIC MODE LOAD_PATH
+export TOPIC MODE LOAD_PATH MAX_PAGES
 
 NOTEBOOK="report.ipynb"
 DATE=$(date +'%B_%d_%Y')
